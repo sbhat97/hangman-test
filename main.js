@@ -119,7 +119,9 @@ let counter = 0;
         //check to see if attempts remaining = 0...if so, show "YOU LOSE" (but don't keep showing message after player has lost once)
         if (attemptsRem == 0 && counter ==10){
           overlay.classList.add('active')
+          document.getElementById("sorry").innerHTML = ('Sorry, you lose. <br> The correct answer is ' +answer);
           messageLose.classList.add('active')
+
           //play "uh oh" audiot because the player guessed incorrectly
         }
         //if player has not already won, and if player has not already gotten the "you lose" message, play "uh oh"
