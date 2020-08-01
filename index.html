@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Hangman </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="This site is for playing Hangman.">
+  <meta name = "keywords" content="games,learn code,">
+  <meta name = "author" content="Shweta Bhat">
+  <meta name= "viewport" content = "width=device-width, intial-scale=1.0">
+  <link rel="stylesheet" href= "style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Hangman</h1>
+    <h3>Type a Letter to Begin!</h3>
+  </header>
+  <div class = "site-container">
+    <section id = boxOne>
+      <h2 id = wordCount>X-letter Word</h2>
+      <h1 id = placeHolder>_ _ _ _ _ _</h1>
+      <img id = "figure" src = "figure0.png"/>
+
+    </section>
+    <section id = boxTwo>
+      <h2>Wrong Attempts:</h2>
+      <h3 id= attempts> </h3>
+      <h3 id=remaining>Attempts Remaining: 10</h3>
+      <button id="startOver"> Start Over </button>
+
+    </section>
+  </div>
+
+  <div class="popUp " id ="youWin">
+    <h1> Congrats! </br> You Win! </h1>
+    <button class="close-button" id="close1">&times;</button>
+  </div>
+
+  <div class="popUp " id ="youLose">
+    <h1> Sorry! </br> You lose. </h1>
+    <button class="close-button" id="close2">&times;</button>
+  </div>
+
+   <div id="overlay"> </div>
+
+
+<script src = "main.js"></script>
+</body>
+</html>

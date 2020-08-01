@@ -1,0 +1,90 @@
+body{
+  font-family: Comic Sans MS,sans-serif;
+  background-color:
+}
+
+header{
+  background-color:#A0A029;
+  text-align: center;
+  padding: 1%;
+  }
+
+  header h3 {
+    color: #FFF;
+  }
+
+.site-container{
+  display: flex;
+  border-style:solid;
+}
+
+#boxOne, #boxTwo {
+  width:50%;
+  border-style:dotted;
+  border-color:#A0A029;
+  margin: 2%;
+  text-align: center;
+  padding-bottom:2%
+}
+
+#boxTwo{
+  padding-top:10%;
+}
+
+#boxOne img {
+  width:60%;
+}
+
+@media only screen and (min-width:393px){
+#placeHolder, #attempts {letter-spacing: 5px;}}
+
+#startOver {
+  margin-top:15%;
+  background-color:#A0A029;
+  padding: 5%;
+  border-color: #A0A029;
+  font-family:Comic Sans MS,sans-serif;
+}
+
+.popUp {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-color: #A0A029;
+  z-index: 10;
+  background-color: white;
+  width: 25%
+}
+
+#close1, #close2 {
+  position:fixed;
+  top: 0%;
+  right:0%;
+  border:none;
+  border-radius:10px;
+}
+
+.popUp.active{
+  transform: translate(-50%,-50%) scale(1);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(0,0,0,.5);
+  pointer-events: none;
+}
+
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
